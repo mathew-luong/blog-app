@@ -1,0 +1,62 @@
+.buttonsContainer{
+    display: flex; 
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.sortBtn {
+    padding: 10px 16px;
+    background-color: #FF8181;
+    border-radius: 5px;
+    border: none;
+    color: #fff; 
+    font-size: 18px;
+    font-weight: bold;
+    /* margin-left: 25px; */
+    text-align: left;
+    display: flex;
+    align-items: center;
+    max-height: 150px;
+}
+
+.sortBtn > svg {
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    margin-left: 16px;
+}
+
+
+.sortBtn:hover {
+    cursor: pointer;
+}
+
+.sortBtn:active {
+    background-color: #d26969;
+}
+
+.searchHeader {
+    padding-top: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+.loginHeader {
+    padding: 10px 0px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .buttonsContainer {
+        width: 90%;
+    }
+    .searchHeader {
+        width: 90%;
+    }
+}

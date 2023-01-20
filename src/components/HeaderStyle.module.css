@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoContainer {
+    display: flex;
+}
+
+.logoImg {
+    width: 60px;
+    height: 60px;
+    margin-right: 0.75rem;
+    border-radius: 5px;
+}
+
+.logoName {
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.searchContainer {
+    /* flex-grow: 1; */
+    margin: 0 20px;
+    height: 100%;
+    width: 40%;
+
+}
+
+.searchInput {
+    margin: 0;
+    height: 50px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+
+}
+
+.searchInput::placeholder {
+    font-size: 16px;
+}
+
+.accountContainer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.accountBtn {
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF8181;
+    color: #fff;
+}
+
+.accountBtn:hover {
+    cursor: pointer;
+}
+
+.accountBtn:active {
+    background-color: #d26969;
+}
+
+
+.logInBtn {
+    /* margin-top: 10px; */
+    height: 40px;
+    width: 95px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF8181;
+    color: #fff;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.logInBtn:active {
+    background-color: #d26969;
+}
+
+.logInBtn:hover {
+    cursor: pointer;
+}
+
+.accountImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.logInBtn > svg {
+    height: 25px;
+    width: 25px;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    .accountImg {
+        display: none;
+    }
+    .container {
+        padding: 1rem 1rem;
+
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container {
+        padding: 12px;
+    }
+    .accountImg {
+        display: none;
+    }
+    .logoName {
+        display: none;
+    }
+    .logoImg {
+        margin-right: 0;
+    }
+    .searchContainer {
+        width: 100%;
+        margin: 0 10px;
+    }
+    .searchInput {
+        height: 60px;
+    }
+}

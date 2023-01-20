@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    margin: 0px auto;
+    padding: 16px;
+    background-color: #fff;
+    /* border-radius: 20px; */
+    height: 100%;
+    padding-bottom: 32px;
+}
+
+.deleteBtn {
+    border: none;
+    background-color: #FF8181;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.deleteBtn > svg {
+    width: 16px;
+    height: 16px;
+    color: #fff;    
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.deleteBtn:hover {
+    cursor: pointer;
+}
+
+.postInfo {
+    margin-bottom: 16px;
+}
+
+.postAuthor {
+    font-size: small;
+}
+
+.postDate {
+    color: #999;
+    margin-left: 12px;
+    font-size: smaller;
+}
+
+.imageContainer {
+    width: 100%;
+    /* height: 85%; */
+    /* height: 90%; */
+    margin-top: 25px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.postImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #FF8181;
+}
+
+.postTitle {
+    /* font-weight: 400; */
+    font-size: x-large;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+.postBody {
+    color: rgb(102, 102, 102);
+    margin-bottom: 25px;
+}
+
+.commentsHeader {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+.logInHeader {
+    margin-bottom: 25px;
+}
+
+.postCommentContainer {
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    padding: 16px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.newCommentHeader {
+    margin-bottom: 16px;
+}
+
+.newCommentInput {
+    width: 100%;
+    margin-bottom: 16px;
+    border: none;
+    resize: vertical;
+    min-height: 56px;
+    border-radius: 5px;
+    padding: 10px;
+}
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+ }
+
+.newCommentInput > ::-webkit-input-placeholder, ::placeholder {
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+}
+
+.newCommentBtn {
+    background-color: #FF8181;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    border: none;
+    height: 32px;
+    width: 64px;
+}
+
+.newCommentBtn:hover {
+    cursor: pointer;
+}
+.newCommentBtn:active {
+    background-color: #d26969;
+}
+
+
+@media screen and (max-width: 768px){
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

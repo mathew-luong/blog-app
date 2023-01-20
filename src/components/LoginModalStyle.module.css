@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.modalShadow {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.logoImg {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.logoName {
+    line-height: 30px;
+    color:#FF8181;
+}
+
+.modalContainer {
+    background-color: #fff;
+    border-radius: 20px;
+    align-self: center;
+    justify-self: center;
+    width: 50vw;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    color: rgb(138, 138, 138);
+}
+
+svg {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    color: #FF8181;
+}
+
+input {
+    width: 100%;
+    border: none;
+    padding: 8px 5px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.loginBtn {
+    background-color: #FF8181;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    border: none;
+    height: 32px;
+    margin-bottom: 15px;
+}
+
+.loginBtn:hover {
+    cursor: pointer;
+}
+.loginBtn:active {
+    background-color: #d26969;
+}
+
+.helpTxt {
+    color: rgb(138, 138, 138);
+}
+
+.textBtn {
+    background-color: #fff;
+    color: #FF8181;
+    border: none;
+    margin-left: 10px;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.textBtn:hover {
+    cursor: pointer;
+}
+
+.textBtn:active {
+    color: #d26969;
+}
+
+@media screen and (max-width: 768px){
+    .modalContainer {
+        width: 70vw;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .modalContainer {
+        width: 90vw;
+    }
+
+}

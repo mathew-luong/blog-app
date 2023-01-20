@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.newPostBtnContainer {
+    display: flex;
+}
+
+.loginHeader {
+    padding: 10px 0px;
+}
+
+.container {
+    padding: 10px 16px;
+    background-color: #FF8181;
+    border-radius: 5px;
+    border: none;
+    color: #fff; 
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+}
+
+.container:hover {
+    cursor: pointer;
+}
+
+.container:active {
+    background-color: #d26969;
+}
+
+
+.container > svg {
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    margin-left: 16px;
+    
+}
+
+.modalShadow {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newPostForm {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+
+.formHeader {
+    width: 100%;
+    color: #FF8181;
+    margin-bottom: 16px;
+}
+
+.formTitle {
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 16px;
+    height: 36px;
+    padding: 10px;
+    color: rgb(96, 96, 96);
+}
+
+.formBody {
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    min-height: 100px;
+    color: rgb(96, 96, 96);
+    resize: vertical;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+ }
+
+.formBody, .formTitle > ::-webkit-input-placeholder, ::placeholder {
+    color: rgb(96, 96, 96);
+    font-size: 18px;
+}
+
+
+.imgContainer {
+    display: flex;
+    align-content: center;
+}
+
+.imgLabel {
+    margin: 0;
+    padding: 0;
+    /* margin-right: 10px; */
+    color:rgb(108, 108, 108);
+    background-color: #eee;
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 5px 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.imgLabel:active {
+    background-color: rgb(207, 205, 205);
+}
+
+.imgLabel > svg {
+    width: 16px;
+    height: 16px;
+    /* padding-top: 5px; */
+    color:rgb(108, 108, 108);
+}
+
+.imgInput {
+    margin: 0;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: #fff;
+    color:rgb(60, 60, 60);
+    width: max-content;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+input[type=file]::-webkit-file-upload-button {
+    display: none;
+}
+  
+.imgLabel:hover {
+    cursor: pointer;
+}
+
+.formButtons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.btns {
+    text-decoration: none;
+    background-color: #FF8181;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    height: 32px;
+    margin-left: 16px;
+}
+
+.btns:hover {
+    cursor: pointer;
+}
+
+.btns:active {
+    background-color: #d26969;
+
+}
+
+
+.closeFormBtn {
+    text-decoration: none;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(96, 96, 96);
+    border: none;
+    height: 32px;
+}
+
+.closeFormBtn:hover {
+    cursor: pointer;
+}
+.closeFormBtn:active {
+    background-color: rgb(197, 197, 197);
+
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        width: 90%;
+    }
+    .newPostForm {
+        width: 90%;
+    }
+}
