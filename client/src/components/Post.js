@@ -1,5 +1,5 @@
 import classes from './PostStyle.module.css';
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from 'react-router-dom';
 import moment from 'moment';
 import { useMediaQuery } from 'react-responsive';
@@ -13,25 +13,6 @@ function Post(props) {
     const userContext = useContext(UserContext);
 
     const [postExpanded, setPostExpanded] = useState(false);
-    const [postLikes, setPostLikes] = useState(null);
-
-    
-    // useEffect(() => {
-    //     console.log("JUST UPDATED DIS B" + props._id)
-    //     if(props.likes) {
-    //         setPostLikes(Object.keys(props.likes).length)
-    //     }
-    //     if(props._id) {
-    //         axios.get("http://localhost:4000/posts/"+props._id)
-    //         .then(response => {
-    //             setPostLikes(Object.keys(response.data.likes).length)
-    //         })
-    //         .catch(error => {
-    //             console.log(error)
-    //         })
-    //     }
-
-    // },[postLikes])
 
 
     // Convert post date into a "time ago" format
@@ -71,8 +52,8 @@ function Post(props) {
         axios.patch('http://localhost:4000/like/'+props._id, data, {withCredentials:true})
         .then(response => {
             // console.log("LIKES " + Object.keys(response.data.likes).length)
-            setPostLikes(Object.keys(response.data.likes).length)
             isLiked = Boolean(response.data.likes[userContext._id]);
+            window.location.reload();
         })
         .catch(error => {
             console.log("New post error: " + error);

@@ -27,6 +27,7 @@ function NewPost() {
     };
 
     function submitPost(e) {
+        e.preventDefault();
         // Define post header, since we are sending an image
         const headers = {
             'content-type': 'multipart/form-data',
@@ -45,6 +46,7 @@ function NewPost() {
         axios.post('http://localhost:4000/newpost',data,{headers})
         .then((res) => {
             handleClickOut();
+            window.location.reload();
         })
         .catch((err) => {
 

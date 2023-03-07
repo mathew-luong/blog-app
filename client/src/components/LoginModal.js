@@ -53,6 +53,7 @@ function LoginModal(props) {
             setEmail('');
             setPassword('');
             setUsername('');
+            window.location.reload();
         })
         .catch(err => {
             console.log(err);
@@ -70,6 +71,7 @@ function LoginModal(props) {
             modalContext.setVisible(false);
             setUsername('');
             setPassword('');
+            window.location.reload();
         })
         .catch((err) => {
             if(err.response.status === 401) {
