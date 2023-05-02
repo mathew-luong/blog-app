@@ -6,6 +6,9 @@ It supports functionality for creating image or text posts. Users can create an 
 It uses the following technologies:
 - MERN (MongoDB, ExpressJS, React, NodeJS)
  
+ 
+ ## How to use
+ 
 - Install dependencies with npm:
   - npm install 
 
